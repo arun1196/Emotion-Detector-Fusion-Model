@@ -3,8 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Ignore model and data folder from local
+data/
+outputs/hybrid/fusion_model.pth
+
 # C extensions
 *.so
+*.DS_Store
 
 # Distribution / packaging
 .Python
