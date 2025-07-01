@@ -1,0 +1,23 @@
+audio:
+  base_dir: "data/RAVDESS/Audio_Speech_Actors_01-04"
+  emotions: ["calm","happy","sad","angry","fearful","surprised","disgust"]
+  intensity_levels: ["normal","strong"]
+  actors: ["01","02","03","04"]
+
+video:
+  base_dir: "data/RAVDESS/Video_Speech_Actors_01-04"
+  emotions: ["calm","happy","sad","angry","fearful","surprised","disgust"]
+  intensity_levels: ["normal","strong"]
+  num_frames: 8
+  actors: ["01","02","03","04"]
+
+fusion:
+  type: hybrid
+  params:
+    fusion_dim: 128
+
+training:
+  batch_size: 8
+  epochs: 10
+  lr: 1e-3
+  device: "cpu"
