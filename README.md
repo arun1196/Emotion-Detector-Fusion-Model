@@ -4,10 +4,12 @@ Part of the project for A Multi-Modal Deep Learning Framework for Real-Time Biom
 # Generate the Fusion Model
 
 We use the dataset from The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)
+
 The data is publicy available at https://zenodo.org/records/1188976
+
 Download the RAVDESS dataset from above and set it at the data DIR `./data/RAVDESS/...` 
-Then run the following to create your fusion model that can detect emotion based on audio/video
-You can use as many speech/video actor content to train but remenber the more data you use, the larger and time consuming process it will be. 
+
+Run the following to create your fusion model that can detect emotion based on audio/video
 
 ```bash
 python scripts/train.py \
@@ -21,6 +23,9 @@ python scripts/train.py \
 ```
 
 The output dir is outputs/hybrid and this is where your new `fusion_model.pth` will be saved.
+
+### Notes
+You can use as many speech/video actor content to train but remenber the more data you use, the larger and time consuming process it will be. 
 
 # Using the Fusion Model
 
